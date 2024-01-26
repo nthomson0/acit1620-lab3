@@ -29,11 +29,22 @@ form button {
 }
 
 header {
-    background-color : teal;
-    color : black;
-    text-align : center;
+    background-color: teal;
+    color: black;
+    text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
- 
+nav {
+    list-style-type: none;
+    text-align: right;
+}
+
+main {
+    display: inline;
+}
+
+.img {
+    display: inline-block;
+}
