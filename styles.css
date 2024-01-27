@@ -28,23 +28,80 @@ form button {
     margin-left: auto;
 }
 
-header {
+header{
     background-color: teal;
-    color: black;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 1rem;
 }
 
-nav {
-    list-style-type: none;
+footer{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ 
+.page-container div{
+    display: flex;
+}
+
+nav{
+    width: 110px;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    padding: 10px;
     text-align: right;
+    list-style-type: none;
 }
 
-main {
-    display: inline;
+li a:link{
+    color: teal;
+    text-decoration: none;
 }
 
-.img {
-    display: inline-block;
+main{
+    padding: 1rem;
+    flex: auto;
+}
+
+main p{
+    margin-top: 0;
+}
+
+.img{
+    width: 200px;
+    float: left;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .page-container div{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    ul{
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+    li{
+        display: inline;
+    }
+    li + li{
+        border-left-style: solid;
+        border-width: 1px;
+        border-color: grey;
+    }
+    h2{
+        margin-top: 0;
+    }
 }
